@@ -1,0 +1,36 @@
+{
+ "n_bonafide": 150,
+ "n_spoof": 450,
+ "conditions": {
+  "clean": {
+   "mean_abs_diff_db_below_4k": 2.0572390207349667,
+   "mean_abs_diff_db_above_4k": 1.6423548528846987,
+   "mean_power_db_above_4k_bonafide": -17.66978018450892,
+   "mean_power_db_above_4k_spoof": -17.24326651268018
+  },
+  "g711": {
+   "mean_abs_diff_db_below_4k": 2.053256765182576,
+   "mean_abs_diff_db_above_4k": 0.7633645658917537,
+   "mean_power_db_above_4k_bonafide": -69.96681364508258,
+   "mean_power_db_above_4k_spoof": -70.2471781355481
+  },
+  "g726": {
+   "mean_abs_diff_db_below_4k": 1.9260219683676993,
+   "mean_abs_diff_db_above_4k": 2.0378250389723744,
+   "mean_power_db_above_4k_bonafide": -64.47732698707135,
+   "mean_power_db_above_4k_spoof": -66.12481915147895
+  },
+  "mp3_low": {
+   "mean_abs_diff_db_below_4k": 2.0465497965110493,
+   "mean_abs_diff_db_above_4k": 1.1467531100458574,
+   "mean_power_db_above_4k_bonafide": -27.460656106192886,
+   "mean_power_db_above_4k_spoof": -26.31390299614702
+  },
+  "opus_low": {
+   "mean_abs_diff_db_below_4k": 1.986581417118477,
+   "mean_abs_diff_db_above_4k": 0.9660872125000445,
+   "mean_power_db_above_4k_bonafide": -21.477960155807803,
+   "mean_power_db_above_4k_spoof": -20.76200624852212
+  }
+ }
+}

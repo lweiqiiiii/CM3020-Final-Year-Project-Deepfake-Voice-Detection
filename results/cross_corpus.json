@@ -1,0 +1,146 @@
+{
+ "corpus": "data/real (label 0, own voice) vs data/fake (label 1, ElevenLabs clones)",
+ "notes": {
+  "lcnn_pilot_in_sample": "model.pth, trained on these same 38 files: in-sample, not a test",
+  "reverse_asvspoof_sample": "model.pth on the 600-file ASVspoof codec sample; mean_real = bona fide, mean_fake = spoof",
+  "lcnn_vad": "VAD-trimmed + codec-aug LCNN; its 'vad' setting is speech-only then tile-padded to 4 s, as trained"
+ },
+ "lcnn_weights_mtime": {
+  "lcnn_clean": 1790562143.9312742,
+  "lcnn_aug": 1790564364.271064,
+  "lcnn_pilot_in_sample": 1782720406.3916154,
+  "lcnn_vad": 1790567824.1089904
+ },
+ "models": {
+  "aasist": {
+   "no_vad": {
+    "eer": 0.2631578947368421,
+    "auc": 0.8864265927977839,
+    "mean_real": 0.5107045401083795,
+    "mean_fake": 0.9322969787999204,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.3157894736842105,
+    "auc": 0.7340720221606647,
+    "mean_real": 0.9008114369292008,
+    "mean_fake": 0.954510930337404,
+    "n": 38
+   }
+  },
+  "lcnn_clean": {
+   "no_vad": {
+    "eer": 0.26315789473684215,
+    "auc": 0.7631578947368421,
+    "mean_real": 0.9674144591155805,
+    "mean_fake": 0.999998927116394,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.631578947368421,
+    "auc": 0.3684210526315789,
+    "mean_real": 1.0,
+    "mean_fake": 0.9960564594519766,
+    "n": 38
+   }
+  },
+  "lcnn_aug": {
+   "no_vad": {
+    "eer": 0.5,
+    "auc": 0.5013850415512465,
+    "mean_real": 0.9473754148302281,
+    "mean_fake": 0.9999927282333374,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.6052631578947368,
+    "auc": 0.39473684210526316,
+    "mean_real": 1.0,
+    "mean_fake": 0.8964647291760158,
+    "n": 38
+   }
+  },
+  "lcnn_pilot_in_sample": {
+   "no_vad": {
+    "eer": 0.0,
+    "auc": 1.0,
+    "mean_real": 4.902508105703321e-07,
+    "mean_fake": 0.9999981867639642,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.2894736842105263,
+    "auc": 0.8545706371191135,
+    "mean_real": 0.6713163955903024,
+    "mean_fake": 0.9999930356678209,
+    "n": 38
+   }
+  },
+  "lcnn_vad": {
+   "no_vad": {
+    "eer": 0.42105263157894735,
+    "auc": 0.6024930747922437,
+    "mean_real": 0.30282295069154797,
+    "mean_fake": 0.5111247246503664,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.7894736842105263,
+    "auc": 0.2022160664819945,
+    "mean_real": 0.8421020383279693,
+    "mean_fake": 0.4184367523238219,
+    "n": 38
+   }
+  },
+  "fusion_clean": {
+   "no_vad": {
+    "eer": 0.21052631578947367,
+    "auc": 0.9113573407202217,
+    "mean_real": 0.73905949961198,
+    "mean_fake": 0.9661479529581571,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.3157894736842105,
+    "auc": 0.7091412742382271,
+    "mean_real": 0.9504057184646004,
+    "mean_fake": 0.9752836948946902,
+    "n": 38
+   }
+  },
+  "fusion_vad": {
+   "no_vad": {
+    "eer": 0.3684210526315789,
+    "auc": 0.7728531855955679,
+    "mean_real": 0.40676374539996374,
+    "mean_fake": 0.7217108517251433,
+    "n": 38
+   },
+   "vad": {
+    "eer": 0.631578947368421,
+    "auc": 0.3573407202216067,
+    "mean_real": 0.871456737628585,
+    "mean_fake": 0.6864738413306128,
+    "n": 38
+   }
+  }
+ },
+ "reverse_asvspoof_sample": {
+  "lcnn_pilot": {
+   "clean": {
+    "eer": 0.36888888888888893,
+    "auc": 0.7196518518518519,
+    "mean_real": 0.73972758371401,
+    "mean_fake": 0.8601233633762913,
+    "n": 600
+   },
+   "g711": {
+    "eer": 0.38666666666666666,
+    "auc": 0.7051777777777778,
+    "mean_real": 0.7195445441983748,
+    "mean_fake": 0.8252981011762539,
+    "n": 600
+   }
+  }
+ }
+}

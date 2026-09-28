@@ -1,0 +1,36 @@
+{
+ "n": 600,
+ "note": "The 'vad' column zero-pads trimmed speech for the untrimmed-trained LCNNs but tiles it for",
+ "models": {
+  "lcnn_clean_s0": {
+   "zero_padded": {
+    "eer": 0.508888888888889,
+    "auc": 0.49101481481481485,
+    "share_scores_equal_1": 0.9733333333333334
+   },
+   "tiled": {
+    "eer": 0.5044444444444445,
+    "auc": 0.4957185185185185,
+    "share_scores_equal_1": 0.96,
+    "mean_bonafide": 0.9935185142979026,
+    "mean_spoof": 0.9999960590733422
+   },
+   "clean_untrimmed_eer": 0.2022222222222222
+  },
+  "lcnn_aug_s0": {
+   "zero_padded": {
+    "eer": 0.5022222222222222,
+    "auc": 0.49777777777777776,
+    "share_scores_equal_1": 0.9966666666666667
+   },
+   "tiled": {
+    "eer": 0.5022222222222222,
+    "auc": 0.4978148148148148,
+    "share_scores_equal_1": 0.9766666666666667,
+    "mean_bonafide": 0.9887272834788613,
+    "mean_spoof": 0.9880896078115
+   },
+   "clean_untrimmed_eer": 0.19666666666666668
+  }
+ }
+}
